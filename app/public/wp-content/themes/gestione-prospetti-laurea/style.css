@@ -4,14 +4,44 @@
  * Author: Luca Seggiani
  */
 
+:root {
+    --light-blue: #3858e9;
+    --dark-blue: #011ea0;
+    --light-gray: #c3c4c7;
+    --off-white: #f1f1f1;
+    --black: #1d2327;
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--black);
+    background-color: var(--off-white);
 }
 
-h1,
+h1 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+		text-align: center;
+}
+
 p {
-    text-align: center;
-    margin-top: 20px;
+	text-align: center;
+}
+
+a {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--light-blue);
+    text-decoration: underline;
+    cursor: pointer;
+    font: inherit;
+}
+
+a:hover {
+    color: var(--dark-blue);
 }

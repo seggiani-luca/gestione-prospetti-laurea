@@ -11,14 +11,11 @@ class GestioneProspettiLaureaUser
     }
 
     public function edit_front_page() {
-        // show user page
+        // only show user page
         if(is_front_page()) {
             $this->render_front_page();
             exit;
-        }
-
-        // disable search (return 404)
-        if (is_search()) {
+        } else {
             $this->render_404();
         }
     }

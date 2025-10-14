@@ -10,7 +10,7 @@ if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . "classes/class-gestione-prospetti-laurea-admin.php";
     new GestioneProspettiLaureaAdmin();
 } else {
-    // show user page + bypass search
+    // show user page + bypass others
     require_once plugin_dir_path(__FILE__) . "classes/class-gestione-prospetti-laurea-user.php";
     new GestioneProspettiLaureaUser();
 }
