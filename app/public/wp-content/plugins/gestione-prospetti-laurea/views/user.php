@@ -1,3 +1,35 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") 
+{
+    $action = $_POST["action"] ?? "";
+
+    $corso_di_laurea = $_POST["corso-di-laurea"] ?? "";
+    $data  = $_POST["data"] ?? "";
+    $matricole = $_POST["matricole"] ?? "";
+
+    switch($action)
+    {
+        case "crea":
+            require_once plugin_dir_path(dirname(__FILE__)) . "classes/crea-prospetti.php";
+            CreaProspetti::creaProspetti($corso_di_laurea, $data, $matricole);
+            break;
+            
+        case "apri":
+            require_once plugin_dir_path(dirname(__FILE__)) . "classes/visualizza-prospetti.php";
+            VisualizzaProspetti::visualizzaProspetti($corso_di_laurea, $data, $matricole);
+            break;
+
+        case "invia":
+            require_once plugin_dir_path(dirname(__FILE__)) . "classes/invia-prospetti.php";
+            InviaProspetti::inviaProspetti($corso_di_laurea, $data, $matricole);
+            break;
+    }
+} 
+else
+{
+    $corso_di_laurea = $data  = $matricole = "";
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +52,7 @@
                         </p>
                         <p>
                             <label>Data</label>
-                            <input type="date" id="data" name="data"/>
+                            <input type="date" id="data" name="data" value="<?= esc_attr($data) ?>"/>
                         </p>
                         <p>
                             <a href="/admin">Configurazione</a>
@@ -29,14 +61,15 @@
                     <div class="matricole-box">
                         <p>
                             <label>Matricole</label>
-                            <textarea name="matricole" rows="10" cols="30" style="resize: none"></textarea>
+                            <textarea name="matricole" rows="10" cols="30" style="resize: none"><?= esc_textarea($matricole) ?>
+                            </textarea>
                         </p>
                     </div>
                     <div class="output-box">
                         <p>
                             <label>Prospetti</label>
                             <button type="submit" name="action" value="crea">Crea prospetti</button>
-                            <button class="button-link" type="submit" name="action" value="apri">Apri prospetti</button>
+                            <button class="button-link" type="submit" name="action" value="apri">Visualizza prospetti</button>
                         </p>
                         <p>
                             <label>Studenti</label>

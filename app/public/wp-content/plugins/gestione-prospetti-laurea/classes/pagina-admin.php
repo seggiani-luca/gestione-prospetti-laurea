@@ -2,31 +2,31 @@
 if (!defined("ABSPATH"))
     exit;
 
-class GestioneProspettiLaureaAdmin
+class PaginaAdmin
 {
 
-    public function __construct()
+    public static function init()
     {
-        // show only plugin relative pages
-        add_action("admin_menu", [$this, "edit_admin_menu"]);
+        // mostra solo pagine relative al plugin
+        add_action("admin_menu", ["PaginaAdmin", "modificaMenuAdmin"]);
 
-        // redirect straight to plugin settings
-        add_action("admin_init", [$this, "redirect_dashboard"]);
+        // redireziona alla pagina di configurazione del plugin
+        add_action("admin_init", ["PaginaAdmin", "redirezionaDashboard"]);
     }
 
-    public function edit_admin_menu()
+    public static function modificaMenuAdmin()
     {
-        // add plugin configuration page
+        // aggiungi pagina di configurazione del plugin
         add_menu_page(
             "Gestione prospetti laurea",
             "Gestione prospetti laurea",
             "manage_options",
             "gestione-prospetti-laurea",
-            [$this, "render_settings_page"],
+            ["PaginaAdmin", "mostraPaginaAdmin"],
             "dashicons-admin-generic"
         );
 
-        // clean up some other pages
+        // ripulisci alcune pagine inutili
         remove_menu_page("index.php");
         remove_menu_page("edit.php");
         remove_menu_page("upload.php");
@@ -34,6 +34,7 @@ class GestioneProspettiLaureaAdmin
         remove_menu_page("edit-comments.php");
         remove_menu_page("tools.php");
 
+        // ripulisci alcune pagine di configurazione inutili
         remove_submenu_page("options-general.php", "options-writing.php");
         remove_submenu_page("options-general.php", "options-reading.php");
         remove_submenu_page("options-general.php", "options-discussion.php");
@@ -42,17 +43,19 @@ class GestioneProspettiLaureaAdmin
         remove_submenu_page("options-general.php", "options-privacy.php");
     }
 
-    public function redirect_dashboard() {
+    public static function redirezionaDashboard() 
+    {
         global $pagenow;
-        if ($pagenow === "index.php") {
+        if ($pagenow === "index.php") 
+        {
             wp_redirect("admin.php?page=gestione-prospetti-laurea");
             exit;
         }
     }
 
-    public function render_settings_page()
+    public static function mostraPaginaAdmin()
     {
-        include plugin_dir_path(dirname(__FILE__)) . "/views/settings_page.php";
+        include plugin_dir_path(dirname(__FILE__)) . "/views/admin.php";
     }
 
 }
