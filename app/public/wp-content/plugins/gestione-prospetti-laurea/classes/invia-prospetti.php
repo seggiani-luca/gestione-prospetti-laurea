@@ -18,9 +18,7 @@ class InviaProspetti
     }
 
     public static function inviaProspetti($corso_di_laurea, $data, $matricole)
-    {        
-        echo("<p>inviaProspetti() chiamata</p>");
-        die();
+    {     
         
         // TODO: implementa chiamando inviaProspetto()
     }

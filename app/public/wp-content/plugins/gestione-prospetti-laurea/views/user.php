@@ -1,12 +1,14 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") 
 {
+    // prendi informazioni dalla richiesta POST sulle opzioni selezionate
     $action = $_POST["action"] ?? "";
 
     $corso_di_laurea = $_POST["corso-di-laurea"] ?? "";
     $data  = $_POST["data"] ?? "";
     $matricole = $_POST["matricole"] ?? "";
 
+    // se si è richiesta un'azione, effettuala
     switch($action)
     {
         case "crea":
@@ -24,10 +26,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
             InviaProspetti::inviaProspetti($corso_di_laurea, $data, $matricole);
             break;
     }
-} 
+}
 else
 {
+    // la richiesta non è POST, lascia opzioni vuote
     $corso_di_laurea = $data  = $matricole = "";
+}
+
+// carica informazioni sui corsi di laurea dal file di configurazione
+$path_corsi = plugin_dir_path(dirname(__FILE__)) . "config/corsi.json";
+$dati_corsi = json_decode(file_get_contents($path_corsi), true);
+$corsi_di_laurea = $dati_corsi["corsi-di-laurea"] ?? [];
+
+$nomi_corsi = [];
+
+foreach($corsi_di_laurea as $corso) {
+    $nome = $corso["nome"] ?? "";
+    if(!empty($nome)) {
+        $nomi_corsi[] = $nome;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -45,13 +62,22 @@ else
                 <div class="main-box">
                     <div class="input-box">
                         <p>
-                            <label>Corso di laurea</label>
-                            <select name="corso-di-laurea">
-                                <option value="" disabled selected>Scegli un corso di laurea</option>
+                            <label for="corso-di-laurea">Corso di laurea</label>
+                            <select id="corso-di-laurea" name="corso-di-laurea">
+                                <!-- opzione di default -->
+                                <option value="" disabled <?= $corso_di_laurea ? "" : "selected" ?>>
+                                    Scegli un corso di laurea
+                                </option>
+                                <!-- opzioni configurabili -->
+                                <?php foreach ($nomi_corsi as $nome): ?>
+                                    <option value="<?= htmlspecialchars($nome) ?>" <?= ($nome == $corso_di_laurea) ? "selected" : "" ?>>
+                                        <?= htmlspecialchars($nome) ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
                         </p>
                         <p>
-                            <label>Data</label>
+                            <label for="data">Data</label>
                             <input type="date" id="data" name="data" value="<?= esc_attr($data) ?>"/>
                         </p>
                         <p>
@@ -60,9 +86,8 @@ else
                     </div>
                     <div class="matricole-box">
                         <p>
-                            <label>Matricole</label>
-                            <textarea name="matricole" rows="10" cols="30" style="resize: none"><?= esc_textarea($matricole) ?>
-                            </textarea>
+                            <label for="matricole">Matricole</label>
+                            <textarea id="matricole" name="matricole" rows="10" cols="30" style="resize: none"><?= esc_textarea($matricole) ?></textarea>
                         </p>
                     </div>
                     <div class="output-box">

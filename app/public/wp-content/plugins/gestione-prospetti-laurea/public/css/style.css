@@ -26,6 +26,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+label {
+    margin-bottom: 5px;
+}
+
 .main-box {
     display: flex;
     gap: 20px;
