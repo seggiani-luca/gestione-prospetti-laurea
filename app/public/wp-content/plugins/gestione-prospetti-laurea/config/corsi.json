@@ -110,14 +110,14 @@
             ],
             "calcolo-voto": {
                 "formula-di-voto": "M * 3 + 18 + C",
-                "t-min": 0,
-                "t-max": 0,
-                "t-step": 0,
-                "c-min": 1,
-                "c-max": 7,
-                "c-step": 1,
-                "valore-lode": 33,
-                "bonus?": true
+                "t-min": "0",
+                "t-max": "0",
+                "t-step": "0",
+                "c-min": "1",
+                "c-max": "7",
+                "c-step": "1",
+                "valore-lode": "33",
+                "bonus": true
             }
         },
         {
@@ -237,7 +237,7 @@
                 }
             ],
             "calcolo-voto": {
-                "formula-di-voto": "2 + 4 * (M * CFU + T * 3) / (CFU + 3)",
+                "formula-di-voto": "2 + 4 * (M * CFU + T * 3) \/ (CFU + 3)",
                 "t-min": 18,
                 "t-max": 33,
                 "t-step": 1,
@@ -245,7 +245,7 @@
                 "c-max": 0,
                 "c-step": 0,
                 "valore-lode": 31,
-                "bonus?": false
+                "bonus": false
             }
         }
     ]

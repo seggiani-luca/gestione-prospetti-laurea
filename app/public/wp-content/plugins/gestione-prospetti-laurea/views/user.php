@@ -40,9 +40,11 @@ $corsi_di_laurea = $dati_corsi["corsi-di-laurea"] ?? [];
 
 $nomi_corsi = [];
 
-foreach($corsi_di_laurea as $corso) {
+foreach($corsi_di_laurea as $corso) 
+{
     $nome = $corso["nome"] ?? "";
-    if(!empty($nome)) {
+    if(!empty($nome)) 
+    {
         $nomi_corsi[] = $nome;
     }
 }

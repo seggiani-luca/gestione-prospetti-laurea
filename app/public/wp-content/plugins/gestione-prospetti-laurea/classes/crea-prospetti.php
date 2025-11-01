@@ -4,7 +4,7 @@ if (!defined("ABSPATH"))
 
 require_once plugin_dir_path(dirname(__FILE__)) . "lib/FPDF/fpdf.php";
 
-class creaProspetti
+class CreaProspetti
 {
     public static function creaProspetti($corso_di_laurea, $data, $matricole) {
         // TODO: implementa

@@ -1,40 +1,129 @@
 <?php 
-// carica informazioni dal file di configurazione
+// carica informazioni dal file di configurazione (per riferimento)
 $path_corsi = plugin_dir_path(dirname(__FILE__)) . "config/corsi.json";
 $dati_corsi = json_decode(file_get_contents($path_corsi), true);
-$corsi_di_laurea = $dati_corsi["corsi-di-laurea"] ?? [];
+$corsi_di_laurea = &$dati_corsi["corsi-di-laurea"];
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") 
 {    
     // prendi informazioni dalla richiesta POST sull'azione richiesta
     $action = $_POST["action"] ?? "";
-    $corso = $_POST["corso"] ?? "";
+    $nome_corso = $_POST["corso"] ?? "";
 
+    // cerca il corso richiesto fra quelli definiti
+    if(!empty($nome_corso)) 
+    {
+        foreach($corsi_di_laurea as $i => &$corso_di_laurea) 
+        {
+            if($corso_di_laurea["nome"] == $nome_corso)
+            {
+                $corso = &$corso_di_laurea;
+                $chiave_corso = $i;
+                break;
+            }
+        }
 
+        if(!isset($corso)) 
+        {
+            // se non hai trovato il corso, limitati a mostrare la pagina di configurazione
+            unset($corsi_di_laurea);
+            return;
+        }
+    }
+    
     // se si è richiesta un'azione, effettuala
     switch($action)
     {
         case "elimina-esami":
-            echo("Richiesto di eliminare esami da " . $corso);
-            die();
+            // prendi array esami presenti e da rimuovere
+            $esami_tutti = $corso["esami-in-media"] ?? [];
+            $esami_selezionati = $_POST["esami-selezionati"] ?? [];
+            
+            // filtra gli esami presenti prendendo solo quelli non da rimuovere
+            $esami_filtrati = array_filter($esami_tutti, function ($esame) use ($esami_selezionati) {
+                return !in_array($esame["COD"], $esami_selezionati);
+            }); 
+
+            // metti gli esami filtrati nel corso
+            $corso["esami-in-media"] = array_values($esami_filtrati);
             break;
+
         case "aggiungi-esame":
-            echo("Richiesto di aggiungere esame a " . $corso);
-            die();
+            // crea il nuovo esame
+            $nuovo_esame = [];
+
+            $COD = $_POST["codice-nuovo-esame"] ?? "";
+            $DES = $_POST["nome-nuovo-esame"] ?? "";
+
+            // se il codice o il nome sono vuoti, non aggiungere
+            if(empty($COD) || empty($DES)) {
+                break;
+            }
+
+            $nuovo_esame["COD"] = $COD;
+            $nuovo_esame["DES"] = $DES;
+
+            // aggiungi l'esame al corso
+            $corso["esami-in-media"][] = $nuovo_esame;
             break;
+
         case "aggiorna-corso":
-            echo("Richiesto di aggiornare " . $corso);
-            die();
+            // ottieni riferimento a configurazione calcolo
+            $calcolo = &$corso["calcolo-voto"];
+
+            // aggiorna configurazione
+            $calcolo["formula-di-voto"] = $_POST["formula-di-voto"] ?? "";
+            $calcolo["t-min"] = $_POST["t-min"] ?? "";
+            $calcolo["t-max"] = $_POST["t-max"] ?? "";
+            $calcolo["t-step"] = $_POST["t-step"] ?? "";
+            $calcolo["c-min"] = $_POST["c-min"] ?? "";
+            $calcolo["c-max"] = $_POST["c-max"] ?? "";
+            $calcolo["c-step"] = $_POST["c-step"] ?? "";
+            $calcolo["valore-lode"] = $_POST["valore-lode"] ?? "";
+            $calcolo["bonus"] = isset($_POST["bonus"]);
+
+            unset($calcolo);
             break;
+
+        case "elimina-corso":
+            // elimina il corso
+            unset($corsi_di_laurea[$chiave_corso]);
+            break;
+
         case "aggiungi-corso":
-            $nuovo_corso = $_POST["nome-nuovo-corso"];
-            echo("Richiesto di aggiungere il corso " . $nuovo_corso);
-            die();
+            // crea il nuovo corso dal template di default
+            $nome_nuovo_corso = $_POST["nome-nuovo-corso"] ?? "";
+
+            // se il nome è vuoto, non aggiungere
+            if(empty($nome_nuovo_corso)) 
+            {
+                break;
+            }
+
+            $path_default = plugin_dir_path(dirname(__FILE__)) . "config/default.json";
+            $nuovo_corso = json_decode(file_get_contents($path_default), true);
+            $nuovo_corso["nome"] = $nome_nuovo_corso;
+
+            // aggiungi il nuovo corso
+            $corsi_di_laurea[] = $nuovo_corso;
             break;
     }
-}
 
-// salva informazioni nel file di configurazione
+    // salva informazioni nel file di configurazione
+    $corsi_aggiornato = json_encode($dati_corsi, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    if (file_put_contents($path_corsi, $corsi_aggiornato) === false) 
+    {
+        die("Errore durante il salvataggio del file JSON.");
+    }
+
+    unset($corso);
+}    
+
+unset($corsi_di_laurea);
+?>
+<?php
+// carica informazioni dal file di configurazione (per valore)
+$corsi_di_laurea = $dati_corsi["corsi-di-laurea"];
 ?>
 <div class="wrap">
     <h1>Configurazione gestione prospetti laurea</h1>
@@ -69,14 +158,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
                             <strong><?= esc_html($esame["DES"] ?? ""); ?></strong>
                         </td>
                         <td style="text-align: right">
-                            <input type="checkbox" name="esame-selezionato" id="esame-selezionato" value="<?= esc_html($esame["COD"] ?? ""); ?>">
+                            <input type="checkbox" name="esami-selezionati[]" id="esame-selezionato" value="<?= esc_html($esame["COD"] ?? ""); ?>">
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
             <div class="tablenav">
-                <button class="button" type="submit" name="action" value="elimina-esami">Elimina esami selezionati</button>
+                <button class="button" style="color: red; border-color: red" type="submit" name="action" value="elimina-esami">Elimina esami selezionati</button>
             </div>
             <h2 style="margin-top: 30px">Aggiungi nuovi esami</h2>
             <table class="wp-list-table widefat">
@@ -170,12 +259,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
                         <label for="bonus">Bonus</label>
                     </th>
                     <td>
-                        <input class="regular-text" type="checkbox" id="bonus" name="bonus" value="<?= esc_html($calcolo["bonus"] ?? ""); ?>"/>
+                        <input type="checkbox" id="bonus" name="bonus" value=1 <?= !empty($calcolo["bonus"]) ? "checked" : ""; ?>/>
                     </td>
                 </tr>
             </table>
             <div class="tablenav">
                 <button class="button" type="submit" name="action" value="aggiorna-corso">Aggiorna corso</button>
+                <button class="button" style="margin-left: 10px; color: red; border-color: red" type="submit" name="action" value="elimina-corso">Elimina corso</button>
             </div>
         </form>
     </div>
