@@ -1,0 +1,267 @@
+{
+    "corso-di-laurea-default": {
+        "nome": "Test",
+        "esami-in-media": [],
+        "calcolo-voto": {
+            "formula-di-voto": "",
+            "t-min": 0,
+            "t-max": 0,
+            "t-step": 0,
+            "c-min": 0,
+            "c-max": 0,
+            "c-step": 0,
+            "valore-lode": 0,
+            "bonus": false
+        }
+    },
+    "corsi-di-laurea": [
+        {
+            "nome": "Ingegneria Informatica Triennale",
+            "esami-in-media": [
+                {
+                    "COD": "TEST1",
+                    "DES": "TEST DI VALUTAZIONE DI INGEGNERIA"
+                },
+                {
+                    "COD": "0034A",
+                    "DES": "MATEMATICA 0"
+                },
+                {
+                    "COD": "004AA",
+                    "DES": "ANALISI MATEMATICA I"
+                },
+                {
+                    "COD": "01BB",
+                    "DES": "FISICA GENERALE I"
+                },
+                {
+                    "COD": "591AA",
+                    "DES": "ALGEBRA LINEARE E ANALISI MATEMATICA II"
+                },
+                {
+                    "COD": "756II",
+                    "DES": "ALGORITMI E STRUTTURE DATI"
+                },
+                {
+                    "COD": "861II",
+                    "DES": "BASI DI DATI"
+                },
+                {
+                    "COD": "862II",
+                    "DES": "FONDAMENTI DI PROGRAMMAZIONE"
+                },
+                {
+                    "COD": "073II",
+                    "DES": "ELETTROTECNICA"
+                },
+                {
+                    "COD": "074II",
+                    "DES": "RETI LOGICHE"
+                },
+                {
+                    "COD": "077II",
+                    "DES": "FONDAMENTI DI AUTOMATICA"
+                },
+                {
+                    "COD": "078II",
+                    "DES": "CALCOLATORI ELETTRONICI"
+                },
+                {
+                    "COD": "080II",
+                    "DES": "PROGETTAZIONE WEB"
+                },
+                {
+                    "COD": "116II",
+                    "DES": "ECONOMIA E ORGANIZZAZIONE AZIENDALE"
+                },
+                {
+                    "COD": "170AA",
+                    "DES": "RICERCA OPERATIVA"
+                },
+                {
+                    "COD": "173AA",
+                    "DES": "CALCOLO NUMERICO"
+                },
+                {
+                    "COD": "075II",
+                    "DES": "COMUNICAZIONI NUMERICHE"
+                },
+                {
+                    "COD": "076II",
+                    "DES": "ELETTRONICA DIGITALE"
+                },
+                {
+                    "COD": "374II",
+                    "DES": "INGEGNERIA DEL SOFTWARE"
+                },
+                {
+                    "COD": "544II",
+                    "DES": "SISTEMI OPERATIVI"
+                },
+                {
+                    "COD": "545II",
+                    "DES": "RETI INFORMATICHE"
+                },
+                {
+                    "COD": "431II",
+                    "DES": "LABORATORIO DI INFORMATICA APPLICATA"
+                },
+                {
+                    "COD": "615II",
+                    "DES": "PROGETTAZIONE DI RETI INFORMATICHE"
+                },
+                {
+                    "COD": "759II",
+                    "DES": "PROGRAMMAZIONE AVANZATA"
+                },
+                {
+                    "COD": "302ZZ",
+                    "DES": "TIROCINIO"
+                },
+                {
+                    "COD": "1717Z",
+                    "DES": "PROVA DI LINGUA INGLESE B2"
+                }
+            ],
+            "calcolo-voto": {
+                "formula-di-voto": "M * 3 + 18 + C",
+                "t-min": 0,
+                "t-max": 0,
+                "t-step": 0,
+                "c-min": 1,
+                "c-max": 7,
+                "c-step": 1,
+                "valore-lode": 33,
+                "bonus": true
+            }
+        },
+        {
+            "nome": "Ingegneria Elettronica Triennale",
+            "esami-in-media": [
+                {
+                    "COD": "TEST1",
+                    "DES": "TEST DI VALUTAZIONE DI INGEGNERIA"
+                },
+                {
+                    "COD": "0034A",
+                    "DES": "MATEMATICA 0"
+                },
+                {
+                    "COD": "004AA",
+                    "DES": "ANALISI MATEMATICA I"
+                },
+                {
+                    "COD": "011BB",
+                    "DES": "FISICA GENERALE I"
+                },
+                {
+                    "COD": "096II",
+                    "DES": "FONDAMENTI DI INFORMATICA E CALCOLATORI"
+                },
+                {
+                    "COD": "108CC",
+                    "DES": "CHIMICA"
+                },
+                {
+                    "COD": "116II",
+                    "DES": "ECONOMIA E ORGANIZZAZIONE AZIENDALE"
+                },
+                {
+                    "COD": "624AA",
+                    "DES": "ANALISI MATEMATICA II"
+                },
+                {
+                    "COD": "625AA",
+                    "DES": "ALGEBRA LINEARE"
+                },
+                {
+                    "COD": "056BB",
+                    "DES": "FISICA GENERALE II"
+                },
+                {
+                    "COD": "089II",
+                    "DES": "ARCHITETTURE DEI SISTEMI ELETTRONICI"
+                },
+                {
+                    "COD": "093II",
+                    "DES": "AUTOMATICA"
+                },
+                {
+                    "COD": "095II",
+                    "DES": "FISICA TECNICA"
+                },
+                {
+                    "COD": "098II",
+                    "DES": "DISPOSITIVI ELETTRONICI"
+                },
+                {
+                    "COD": "590AA",
+                    "DES": "CALCOLO NUMERICO"
+                },
+                {
+                    "COD": "801II",
+                    "DES": "ELETTROTECNICA"
+                },
+                {
+                    "COD": "802II",
+                    "DES": "SEGNALI DETERMINISTICI"
+                },
+                {
+                    "COD": "100II",
+                    "DES": "ELETTRONICA DIGITALE"
+                },
+                {
+                    "COD": "102II",
+                    "DES": "MISURE ELETTRONICHE E STRUMENTAZIONE"
+                },
+                {
+                    "COD": "1212I",
+                    "DES": "SEGNALI ALEATORI E SISTEMI DI ELABORAZIONE"
+                },
+                {
+                    "COD": "1213I",
+                    "DES": "ELETTRONICA E LABORATORIO DI ELETTRONICA"
+                },
+                {
+                    "COD": "190II",
+                    "DES": "SISTEMI ELETTRONICI PER L'ENERGIA ALTERNATIVA"
+                },
+                {
+                    "COD": "191II",
+                    "DES": "TEORIA DEI CIRCUITI ELETTRONICI"
+                },
+                {
+                    "COD": "192II",
+                    "DES": "SISTEMI ELETTRONICI PROGRAMMABILI"
+                },
+                {
+                    "COD": "193II",
+                    "DES": "COSTRUZIONI ELETTRONICHE"
+                },
+                {
+                    "COD": "194II",
+                    "DES": "OPTOELETTRONICA"
+                },
+                {
+                    "COD": "195II",
+                    "DES": "ELETTRONICA DELLO STATO SOLIDO"
+                },
+                {
+                    "COD": "1717Z",
+                    "DES": "PROVA DI LINGUA INGLESE B2"
+                }
+            ],
+            "calcolo-voto": {
+                "formula-di-voto": "2 + 4 * (M * CFU + T * 3) \/ (CFU + 3)",
+                "t-min": 18,
+                "t-max": 33,
+                "t-step": 1,
+                "c-min": 0,
+                "c-max": 0,
+                "c-step": 0,
+                "valore-lode": 31,
+                "bonus": false
+            }
+        }
+    ]
+}

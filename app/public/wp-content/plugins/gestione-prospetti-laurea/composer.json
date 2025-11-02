@@ -1,0 +1,17 @@
+{
+    "name": "luca/gestione-prospetti",
+    "description": "Implementa il sistema di gestione dei prospetti di laurea",
+    "type": "wordpress-plugin",
+    "require": {
+      "phpmailer/phpmailer": "*",
+      "setasign/fpdf": "*",
+      "justinrainbow/json-schema": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "GestioneProspettiLaurea\\": "classes/"
+      }
+    },
+    "minimum-stability": "stable"
+  }
+  

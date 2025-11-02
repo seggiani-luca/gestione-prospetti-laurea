@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "definitions": {
+      "esame": {
+        "type": "object",
+        "properties": {
+          "COD": { "type": "string" },
+          "DES": { "type": "string" }
+        },
+        "required": [
+            "COD",
+            "DES"
+        ]
+      },
+      "calcolo-voto": {
+        "type": "object",
+        "properties": {
+          "formula-di-voto": { "type": "string" },
+          "t-min": { "type": "number" },
+          "t-max": { "type": "number" },
+          "t-step": { "type": "number" },
+          "c-min": { "type": "number" },
+          "c-max": { "type": "number" },
+          "c-step": { "type": "number" },
+          "valore-lode": { "type": "number" },
+          "bonus": { "type": "boolean" }
+        },
+        "required": [
+            "formula-di-voto",
+            "t-min",
+            "t-max",
+            "t-step",
+            "c-min",
+            "c-max",
+            "c-step",
+            "valore-lode",
+            "bonus"
+        ]
+      },
+      "corso": {
+        "type": "object",
+        "properties": {
+          "nome": { "type": "string" },
+          "esami-in-media": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/esame" }
+          },
+          "calcolo-voto": { "$ref": "#/definitions/calcolo-voto" }
+        },
+        "required": ["nome", "esami-in-media", "calcolo-voto"]
+      }
+    },
+    "properties": {
+      "corso-di-laurea-default": { "$ref": "#/definitions/corso" },
+      "corsi-di-laurea": {
+        "type": "array",
+        "items": { "$ref": "#/definitions/corso" }
+      }
+    },
+    "required": ["corso-di-laurea-default", "corsi-di-laurea"]
+  }
+  
