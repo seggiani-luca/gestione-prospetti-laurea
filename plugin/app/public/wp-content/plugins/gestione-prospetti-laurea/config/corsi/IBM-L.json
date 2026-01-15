@@ -1,0 +1,49 @@
+{
+    "nome": "INGEGNERIA BIOMEDICA",
+    "nome-corto": "IBM-L",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [
+                {
+                    "COD": "247ZZ",
+                    "DES": "PROVA DI LINGUA INGLESE (B1)"
+                },
+                {
+                    "COD": "1717Z",
+                    "DES": "PROVA DI LINGUA INGLESE (B2)"
+                }
+            ],
+            "esclusi": [
+                {
+                    "COD": "304ZZ",
+                    "DES": "PROVA FINALE"
+                },
+                {
+                    "COD": "TEST1",
+                    "DES": "TEST DI VALUTAZIONE DI INGEGNERIA"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "(110 \/ 27.17) * (M * CFU + T * 3) \/ (CFU + 3)",
+        "t-min": 18,
+        "t-max": 30,
+        "t-step": 1,
+        "c-min": 0,
+        "c-max": 0,
+        "c-step": 0,
+        "valore-lode": 33,
+        "cfu-richiesti": 177,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "scegli voto di tesi, prendi il corrispondente voto di laurea ed arrotonda.",
+        "itera-t-c": false
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in INGEGNERIA BIOMEDICA (IBM-L)",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED.\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "nome": "COMPUTER ENGINEERING, ARTIFICAL INTELLIGENCE AND DATA ENGINEERING",
+    "nome-corto": "WCN-LM, WAI-LM",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [],
+            "esclusi": [
+                {
+                    "COD": "274ZW",
+                    "DES": "PROVA FINALE"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "M * 3 + 22 + T + C",
+        "t-min": 0,
+        "t-max": 0,
+        "t-step": 0,
+        "c-min": 1,
+        "c-max": 3,
+        "c-step": 1,
+        "valore-lode": 31,
+        "cfu-richiesti": 96,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "scegli voto commissione, prendi il corrispondente voto di laurea e somma il voto di tesi, quindi arrotonda.",
+        "itera-t-c": true
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in COMPUTER ENGINEERING, ARTIFICAL INTELLIGENCE AND DATA ENGINEERING (WCN-LM, WAI-LM)",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED;\r\n- Il voto di tesi (T) appare nominalmente a zero in quanto verrà determinato in sede di laurea.\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}

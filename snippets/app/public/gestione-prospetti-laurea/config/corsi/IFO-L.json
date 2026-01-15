@@ -1,0 +1,104 @@
+{
+    "nome": "INGEGNERIA INFORMATICA",
+    "nome-corto": "IFO-L",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [
+                {
+                    "COD": "247ZZ",
+                    "DES": "PROVA DI LINGUA INGLESE (B1)"
+                },
+                {
+                    "COD": "1717Z",
+                    "DES": "PROVA DI LINGUA INGLESE (B2)"
+                }
+            ],
+            "esclusi": [
+                {
+                    "COD": "304ZZ",
+                    "DES": "PROVA FINALE"
+                },
+                {
+                    "COD": "TEST1",
+                    "DES": "TEST DI VALUTAZIONE DI INGEGNERIA"
+                }
+            ]
+        },
+        {
+            "studente": "345678",
+            "fuori-media": [],
+            "esclusi": [
+                {
+                    "COD": "212ZW",
+                    "DES": "LIBERA SCELTA PER RICONOSCIMENTI"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "M * 3 + 18 + C",
+        "t-min": 1,
+        "t-max": 3,
+        "t-step": 1,
+        "c-min": 1,
+        "c-max": 7,
+        "c-step": 1,
+        "valore-lode": 33,
+        "cfu-richiesti": 177,
+        "bonus": true,
+        "esami-sottomedia": [
+            {
+                "COD": "758II",
+                "DES": "FONDAMENTI DI PROGRAMMAZIONE"
+            },
+            {
+                "COD": "862II",
+                "DES": "FONDAMENTI DI PROGRAMMAZIONE"
+            },
+            {
+                "COD": "756II",
+                "DES": "ALGORITMI E STRUTTURE DATI"
+            },
+            {
+                "COD": "757II",
+                "DES": "BASI DI DATI"
+            },
+            {
+                "COD": "861II",
+                "DES": "BASI DI DATI"
+            },
+            {
+                "COD": "374II",
+                "DES": "INGEGNERIA DEL SOFTWARE"
+            },
+            {
+                "COD": "074II",
+                "DES": "RETI LOGICHE"
+            },
+            {
+                "COD": "078II",
+                "DES": "CALCOLATORI ELETTRONICI"
+            },
+            {
+                "COD": "544II",
+                "DES": "SISTEMI OPERATIVI"
+            },
+            {
+                "COD": "080II",
+                "DES": "PROGETTAZIONE WEB"
+            },
+            {
+                "COD": "545II",
+                "DES": "RETI INFORMATICHE"
+            }
+        ],
+        "calcola-sottomedia": true,
+        "info-voto-finale": "scegli voto commissione, prendi il corrispondente voto di laurea e somma il voto di tesi tra 1 e 3, quindi arrotonda.",
+        "itera-t-c": false
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in INGEGNERIA INFORMATICA (IFO-L)",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED;\r\n- Il voto di commissione (C) appare nominalmente a zero in quanto verrà determinato in sede di laurea, e va da 1 a 7.\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}

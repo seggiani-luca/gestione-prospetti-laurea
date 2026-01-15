@@ -1,0 +1,36 @@
+{
+    "nome": "INGEGNERIA DELLE TELECOMUNICAZIONI",
+    "nome-corto": "WIT-LM",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [],
+            "esclusi": [
+                {
+                    "COD": "272ZW",
+                    "DES": "PROVA FINALE"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "M * 11 \/ 3 + C",
+        "t-min": 0,
+        "t-max": 0,
+        "t-step": 0,
+        "c-min": 1,
+        "c-max": 11,
+        "c-step": 1,
+        "valore-lode": 33,
+        "cfu-richiesti": 96,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "scegli voto commissione, prendi il corrispondente voto di laurea ed arrotonda.",
+        "itera-t-c": false
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM) ",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED.\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}

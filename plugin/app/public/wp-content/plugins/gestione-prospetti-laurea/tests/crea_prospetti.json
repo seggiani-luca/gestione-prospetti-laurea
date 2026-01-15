@@ -1,0 +1,1002 @@
+{
+    "tests": [
+        {
+            "in": {
+                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                "data": "2023-01-04",
+                "matricole": [
+                    "123456"
+                ]
+            },
+            "out": {
+                "prospetti-studente": [
+                    {
+                        "bonus": false,
+                        "carriera": [
+                            {
+                                "codice": "758II",
+                                "cfu": 9,
+                                "voto": 23,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "004AA",
+                                "cfu": 12,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "591AA",
+                                "cfu": 12,
+                                "voto": 25,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "758II",
+                                "cfu": 3,
+                                "voto": 21,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "756II",
+                                "cfu": 6,
+                                "voto": 21,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "011BB",
+                                "cfu": 12,
+                                "voto": 21,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "173AA",
+                                "cfu": 6,
+                                "voto": 20,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "757II",
+                                "cfu": 6,
+                                "voto": 23,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "073II",
+                                "cfu": 6,
+                                "voto": 26,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "170AA",
+                                "cfu": 9,
+                                "voto": 19,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "077II",
+                                "cfu": 9,
+                                "voto": 26,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "374II",
+                                "cfu": 6,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "245AA",
+                                "cfu": 6,
+                                "voto": 23,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "116II",
+                                "cfu": 6,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "633AA",
+                                "cfu": 6,
+                                "voto": 25,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "075II",
+                                "cfu": 9,
+                                "voto": 23,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "074II",
+                                "cfu": 9,
+                                "voto": 22,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "076II",
+                                "cfu": 9,
+                                "voto": 28,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "247ZZ",
+                                "cfu": 3,
+                                "voto": 0,
+                                "in_media": false,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "078II",
+                                "cfu": 9,
+                                "voto": 21,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "544II",
+                                "cfu": 9,
+                                "voto": 25,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "080II",
+                                "cfu": 6,
+                                "voto": 30,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "codice": "545II",
+                                "descrizione": "RETI INFORMATICHE",
+                                "cfu": 9,
+                                "voto": 26,
+                                "in_media": true,
+                                "in_sottomedia": true
+                            }
+                        ],
+                        "media-pesata": 23.655,
+                        "cfu-in-media": 174,
+                        "cfu-conseguiti": 177,
+                        "voto-tesi": 0,
+                        "sottomedia": 23.667,
+                        "simulazione": [
+                            {
+                                "iter": 1,
+                                "voto": 89.966
+                            },
+                            {
+                                "iter": 2,
+                                "voto": 90.966
+                            },
+                            {
+                                "iter": 3,
+                                "voto": 91.966
+                            },
+                            {
+                                "iter": 4,
+                                "voto": 92.966
+                            },
+                            {
+                                "iter": 5,
+                                "voto": 93.966
+                            },
+                            {
+                                "iter": 6,
+                                "voto": 94.966
+                            },
+                            {
+                                "iter": 7,
+                                "voto": 95.966
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "in": {
+                "corso": "INGEGNERIA ELETTRONICA (WIE-LM)",
+                "data": "2023-01-04",
+                "matricole": [
+                    "234567"
+                ]
+            },
+            "out": {
+                "prospetti-studente": [
+                    {
+                        "bonus": false,
+                        "carriera": [
+                            {
+                                "codice": "319II",
+                                "cfu": 9,
+                                "voto": 25,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "318II",
+                                "cfu": 6,
+                                "voto": 20,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "098II",
+                                "cfu": 9,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "315II",
+                                "cfu": 12,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "314II",
+                                "cfu": 9,
+                                "voto": 30,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "310II",
+                                "cfu": 6,
+                                "voto": 26,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "915II",
+                                "cfu": 9,
+                                "voto": 20,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "317II",
+                                "cfu": 6,
+                                "voto": 28,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "311II",
+                                "cfu": 9,
+                                "voto": 28,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "309II",
+                                "cfu": 9,
+                                "voto": 27,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "307II",
+                                "cfu": 9,
+                                "voto": 19,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "codice": "313II",
+                                "cfu": 9,
+                                "voto": 24,
+                                "in_media": true,
+                                "in_sottomedia": false
+                            }
+                        ],
+                        "media-pesata": 24.559,
+                        "cfu-in-media": 102,
+                        "cfu-conseguiti": 102,
+                        "voto-tesi": 0,
+                        "sottomedia": 0,
+                        "simulazione": [
+                            {
+                                "iter": 18,
+                                "voto": 94.3
+                            },
+                            {
+                                "iter": 19,
+                                "voto": 94.9
+                            },
+                            {
+                                "iter": 20,
+                                "voto": 95.5
+                            },
+                            {
+                                "iter": 21,
+                                "voto": 96.1
+                            },
+                            {
+                                "iter": 22,
+                                "voto": 96.7
+                            },
+                            {
+                                "iter": 23,
+                                "voto": 97.3
+                            },
+                            {
+                                "iter": 24,
+                                "voto": 97.9
+                            },
+                            {
+                                "iter": 25,
+                                "voto": 98.5
+                            },
+                            {
+                                "iter": 26,
+                                "voto": 99.1
+                            },
+                            {
+                                "iter": 27,
+                                "voto": 99.7
+                            },
+                            {
+                                "iter": 28,
+                                "voto": 100.3
+                            },
+                            {
+                                "iter": 29,
+                                "voto": 100.9
+                            },
+                            {
+                                "iter": 30,
+                                "voto": 101.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "in": {
+                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                "data": "2023-01-04",
+                "matricole": [
+                    "345678"
+                ]
+            },
+            "out": {
+                "prospetti-studente": [
+                    {
+                        "bonus": true,
+                        "carriera": [
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "862II",
+                                "descrizione": "FONDAMENTI DI PROGRAMMAZIONE",
+                                "cfu": 9,
+                                "voto": 25,
+                                "data": {
+                                    "date": "2020-01-16 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "004AA",
+                                "descrizione": "ANALISI MATEMATICA I",
+                                "cfu": 12,
+                                "voto": 25,
+                                "data": {
+                                    "date": "2020-02-28 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "591AA",
+                                "descrizione": "ALGEBRA LINEARE E ANALISI MATEMATICA II",
+                                "cfu": 12,
+                                "voto": 30,
+                                "data": {
+                                    "date": "2020-07-13 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "756II",
+                                "descrizione": "ALGORITMI E STRUTTURE DATI",
+                                "cfu": 6,
+                                "voto": 30,
+                                "data": {
+                                    "date": "2020-10-05 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "1717Z",
+                                "descrizione": "PROVA DI LINGUA INGLESE B2",
+                                "cfu": 3,
+                                "voto": 0,
+                                "data": {
+                                    "date": "2020-11-12 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": false,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "861II",
+                                "descrizione": "BASI DI DATI",
+                                "cfu": 9,
+                                "voto": 27,
+                                "data": {
+                                    "date": "2020-11-26 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "374II",
+                                "descrizione": "INGEGNERIA DEL SOFTWARE",
+                                "cfu": 6,
+                                "voto": 30,
+                                "data": {
+                                    "date": "2021-02-01 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "173AA",
+                                "descrizione": "CALCOLO NUMERICO",
+                                "cfu": 6,
+                                "voto": 26,
+                                "data": {
+                                    "date": "2021-02-08 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "011BB",
+                                "descrizione": "FISICA GENERALE I",
+                                "cfu": 12,
+                                "voto": 24,
+                                "data": {
+                                    "date": "2021-02-24 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "116II",
+                                "descrizione": "ECONOMIA E ORGANIZZAZIONE AZIENDALE",
+                                "cfu": 6,
+                                "voto": 29,
+                                "data": {
+                                    "date": "2021-07-28 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "073II",
+                                "descrizione": "ELETTROTECNICA",
+                                "cfu": 6,
+                                "voto": 18,
+                                "data": {
+                                    "date": "2021-09-20 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "080II",
+                                "descrizione": "PROGETTAZIONE WEB",
+                                "cfu": 6,
+                                "voto": 27,
+                                "data": {
+                                    "date": "2021-09-23 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "077II",
+                                "descrizione": "FONDAMENTI DI AUTOMATICA",
+                                "cfu": 9,
+                                "voto": 28,
+                                "data": {
+                                    "date": "2021-11-29 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "257AA",
+                                "descrizione": "PROGRAMMAZIONE DI INTERFACCE",
+                                "cfu": 6,
+                                "voto": 30,
+                                "data": {
+                                    "date": "2021-12-11 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "170AA",
+                                "descrizione": "RICERCA OPERATIVA",
+                                "cfu": 9,
+                                "voto": 18,
+                                "data": {
+                                    "date": "2022-01-13 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": false,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "074II",
+                                "descrizione": "RETI LOGICHE",
+                                "cfu": 9,
+                                "voto": 25,
+                                "data": {
+                                    "date": "2022-02-23 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "245AA",
+                                "descrizione": "CRITTOGRAFIA",
+                                "cfu": 6,
+                                "voto": 28,
+                                "data": {
+                                    "date": "2022-03-28 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "078II",
+                                "descrizione": "CALCOLATORI ELETTRONICI",
+                                "cfu": 9,
+                                "voto": 21,
+                                "data": {
+                                    "date": "2022-07-06 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "076II",
+                                "descrizione": "ELETTRONICA DIGITALE",
+                                "cfu": 9,
+                                "voto": 18,
+                                "data": {
+                                    "date": "2022-07-12 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "544II",
+                                "descrizione": "SISTEMI OPERATIVI",
+                                "cfu": 9,
+                                "voto": 24,
+                                "data": {
+                                    "date": "2022-09-12 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "075II",
+                                "descrizione": "COMUNICAZIONI NUMERICHE",
+                                "cfu": 9,
+                                "voto": 24,
+                                "data": {
+                                    "date": "2022-10-06 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA INFORMATICA (IFO-L)",
+                                "codice": "545II",
+                                "descrizione": "RETI INFORMATICHE",
+                                "cfu": 9,
+                                "voto": 26,
+                                "data": {
+                                    "date": "2022-11-03 00:44:38.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": true
+                            }
+                        ],
+                        "media-pesata": 25.564,
+                        "cfu-in-media": 165,
+                        "cfu-conseguiti": 177,
+                        "voto-tesi": 0,
+                        "sottomedia": 25.75,
+                        "simulazione": [
+                            {
+                                "iter": 1,
+                                "voto": 95.691
+                            },
+                            {
+                                "iter": 2,
+                                "voto": 96.691
+                            },
+                            {
+                                "iter": 3,
+                                "voto": 97.691
+                            },
+                            {
+                                "iter": 4,
+                                "voto": 98.691
+                            },
+                            {
+                                "iter": 5,
+                                "voto": 99.691
+                            },
+                            {
+                                "iter": 6,
+                                "voto": 100.691
+                            },
+                            {
+                                "iter": 7,
+                                "voto": 101.691
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "in": {
+                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                "data": "2023-01-04",
+                "matricole": [
+                    "456789"
+                ]
+            },
+            "out": {
+                "prospetti-studente": [
+                    {
+                        "bonus": false,
+                        "carriera": [
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "290II",
+                                "descrizione": "INGEGNERIA DEL TELETRAFFICO",
+                                "cfu": 9,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2019-08-27 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "283II",
+                                "descrizione": "ANTENNE E PROPAGAZIONE",
+                                "cfu": 9,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2019-09-30 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "552II",
+                                "descrizione": "TEORIA DELLA DECISIONE E DELLA STIMA",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-01-20 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "286II",
+                                "descrizione": "COMUNICAZIONI ELETTRICHE",
+                                "cfu": 9,
+                                "voto": 29,
+                                "data": {
+                                    "date": "2020-02-21 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "535II",
+                                "descrizione": "FONDAMENTI DI RADAR",
+                                "cfu": 9,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-04-28 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "299II",
+                                "descrizione": "SICUREZZA NELLE RETI",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-06-11 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "536II",
+                                "descrizione": "COMUNICAZIONI DIGITALI",
+                                "cfu": 12,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-07-27 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "553II",
+                                "descrizione": "COMUNICAZIONI WIRELESS",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-09-23 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "555II",
+                                "descrizione": "CIRCUITI E DISPOSITIVI OTTICI E A MICROONDE",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2020-12-04 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "289II",
+                                "descrizione": "ELABORAZIONE E TRASMISSIONE DELLE IMMAGINI",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2021-01-11 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "291II",
+                                "descrizione": "METODI E TECNOLOGIE PER IL TELERILEVAMENTO",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2021-02-17 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "562II",
+                                "descrizione": "TECNOLOGIE E DISPOSITIVI PER SISTEMI WIRELESS",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2021-04-22 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            },
+                            {
+                                "corso": "INGEGNERIA DELLE TELECOMUNICAZIONI (WIT-LM)",
+                                "codice": "292II",
+                                "descrizione": "MICROELETTRONICA PER LE TELECOMUNICAZIONI",
+                                "cfu": 6,
+                                "voto": 33,
+                                "data": {
+                                    "date": "2021-07-19 00:54:35.000000",
+                                    "timezone_type": 3,
+                                    "timezone": "UTC"
+                                },
+                                "in_media": true,
+                                "in_sottomedia": false
+                            }
+                        ],
+                        "media-pesata": 32.625,
+                        "cfu-in-media": 96,
+                        "cfu-conseguiti": 96,
+                        "voto-tesi": 0,
+                        "sottomedia": 0,
+                        "simulazione": [
+                            {
+                                "iter": 1,
+                                "voto": 120.625
+                            },
+                            {
+                                "iter": 2,
+                                "voto": 121.625
+                            },
+                            {
+                                "iter": 3,
+                                "voto": 122.625
+                            },
+                            {
+                                "iter": 4,
+                                "voto": 123.625
+                            },
+                            {
+                                "iter": 5,
+                                "voto": 124.625
+                            },
+                            {
+                                "iter": 6,
+                                "voto": 125.625
+                            },
+                            {
+                                "iter": 7,
+                                "voto": 126.625
+                            },
+                            {
+                                "iter": 8,
+                                "voto": 127.625
+                            },
+                            {
+                                "iter": 9,
+                                "voto": 128.625
+                            },
+                            {
+                                "iter": 10,
+                                "voto": 129.625
+                            },
+                            {
+                                "iter": 11,
+                                "voto": 130.625
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "in": {
+                "corso": "CYBERSECURITY (WCY-LM)",
+                "data": "2023-01-04",
+                "matricole": [
+                    "567890"
+                ]
+            },
+            "out": null
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "nome": "INGEGNERIA ELETTRONICA",
+    "nome-corto": "WIE-LM",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [],
+            "esclusi": [
+                {
+                    "COD": "274ZW",
+                    "DES": "PROVA FINALE"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "4 * (M * CFU + T * 18) \/ (CFU + 18)",
+        "t-min": 18,
+        "t-max": 30,
+        "t-step": 1,
+        "c-min": 0,
+        "c-max": 0,
+        "c-step": 0,
+        "valore-lode": 31,
+        "cfu-richiesti": 102,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "scegli voto di tesi, prendi il corrispondente voto di laurea ed arrotonda.",
+        "itera-t-c": true
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in INGEGNERIA ELETTRONICA (WIE-LM)",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED;\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "nome": "",
+    "nome-corto": "",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [],
+            "esclusi": []
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "",
+        "t-min": 0,
+        "t-max": 0,
+        "t-step": 0,
+        "c-min": 0,
+        "c-max": 0,
+        "c-step": 0,
+        "valore-lode": 0,
+        "cfu-richiesti": 0,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "prendi il voto di laurea e arrotonda",
+        "itera-t-c": true
+    },
+    "mail": {
+        "oggetto": "Appello di laurea",
+        "corpo": "Gentile studente,\n\nTrova in allegato il prospetto relativo alla sua laurea.\n\nL'unità didattica."
+    }
+}

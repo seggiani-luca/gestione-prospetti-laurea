@@ -1,0 +1,36 @@
+{
+    "nome": "INGEGNERIA BIOMEDICA, BIONICS ENGINEERING",
+    "nome-corto": "WIB-LM, WBE-LM",
+    "filtri": [
+        {
+            "studente": "*",
+            "fuori-media": [],
+            "esclusi": [
+                {
+                    "COD": "274ZW",
+                    "DES": "PROVA FINALE"
+                }
+            ]
+        }
+    ],
+    "calcolo-voto": {
+        "formula-di-voto": "M * 3.5 + 11 + C",
+        "t-min": 0,
+        "t-max": 0,
+        "t-step": 0,
+        "c-min": 0.5,
+        "c-max": 4,
+        "c-step": 0.5,
+        "valore-lode": 31,
+        "cfu-richiesti": 105,
+        "bonus": false,
+        "esami-sottomedia": [],
+        "calcola-sottomedia": false,
+        "info-voto-finale": "scegli voto di commissione, prendi il corrispondente voto di laurea ed arrotonda.",
+        "itera-t-c": true
+    },
+    "mail": {
+        "oggetto": "Appello di laurea in INGEGNERIA BIOMEDICA, BIONICS ENGINEERING (WIB-LM, WBE-LM)",
+        "corpo": "Gentile laureando\/a,\r\nAllego un prospetto contenente: la sua carriera, gli indicatori e la formula che la commissione adopererà per determinare il suo voto di laurea.\r\nLa prego di prendere visione dei dati relativi agli esami.\r\nIn caso di dubbi scrivere a: vittoria.dattilo@unipi.it\r\nAlcune spiegazioni:\r\n- Gli esami che non hanno un voto in trentesimi, hanno voto nominale zero al posto di giudizio o idoneità, in\r\nquanto non contribuiscono al calcolo della media ma solo al numero di crediti curriculari;\r\n- Gli esami che non fanno media (pur contribuendo ai crediti curriculari) non hanno la spunta nella colonna MED.\r\n\r\nCordiali saluti\r\nUnità Didattica DII"
+    }
+}
